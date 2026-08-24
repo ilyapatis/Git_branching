@@ -114,9 +114,6 @@ echo "====="
 предпочитает делать `merge`, а кто-то — `rebase`. Конфликты с merge обычно решаются просто,
 а с rebase бывают сложности, поэтому давайте смержим все наработки в `main` и разрешим конфликты.
 
-Если всё было сделано правильно, то на странице `network` в GitHub, находящейся по адресу
-`https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/network`, будет примерно такая схема:
-
 #### Merge
 
 Сливаем ветку `git-merge` в main и отправляем изменения в репозиторий, должно получиться без конфликтов:
@@ -133,8 +130,6 @@ Counting objects: 100% (1/1), done.
 Writing objects: 100% (1/1), 223 bytes | 223.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 ```
-
-В результате получаем такую схему:
 
 #### Rebase
 
@@ -252,3 +247,7 @@ Fast-forward
  branching/rebase.sh | 3 +--
  1 file changed, 1 insertion(+), 2 deletions(-)
 ```
+
+![graph](images/graph.png)
+
+![cli_graph](images/cli_graph.png)
